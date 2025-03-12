@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepField Chatbot A1 - Deepfield Team</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
+    header {
+      background-color: #282c34;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: space-between; /* Distribute space for title and back button */
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 5px;
+      font-style: italic;
+    }
+
+    #chat-container {
+      flex-grow: 1;
+      width: 100%;
+      padding: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 600px;
+      border: none;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #282c34;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: auto;
+    }
+
+    .back-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+        background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Čech Chatbot A1</h1>
+    <a href="index.html" class="back-button">Back to Home</a>  <!-- Back to Home Button -->
+    <p>Developed by the Deepfield Team</p>
+  </header>
+
+  <div id="chat-container" width= 100% ; height = 100%>
+    <iframe
+     src="https://udify.app/chatbot/pBIFVwRrIy6dnwfd"
+   style="width: 100%; height: 100%; min-height: 700px"
+   frameborder="0"
+   allow="microphone">
+</iframe>
+  </div>
+
+  <footer>
+    © 2024 Deepfield Team. All rights reserved.
+  </footer>
+
+</body>
+</html>
